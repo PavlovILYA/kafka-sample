@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "8c72fe09-4e9b-4696-b1cb-d4d6dd77d8bd",
+		"name": "Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21173553"
+	},
+	"item": [
+		{
+			"name": "Send message to kafka",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://10.20.14.54:8083/send",
+					"protocol": "http",
+					"host": [
+						"10",
+						"20",
+						"14",
+						"54"
+					],
+					"port": "8083",
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
