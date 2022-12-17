@@ -11,7 +11,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 @SpringBootApplication
 public class KafkaConsumerApplication {
 
-	@KafkaListener(topics="message")
+	@KafkaListener(topics="ExperimentalTopic")
 	public void msgListener(String message){
 		log.info("Message from ExperimentalTopic: {}", message);
 	}

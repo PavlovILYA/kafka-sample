@@ -18,6 +18,6 @@ public class ProducerController {
 
     @PostMapping("/send")
     public void sendOrder(String msgId, String msg){
-        kafkaTemplate.send("message", msgId, msg);
+        kafkaTemplate.send("ExperimentalTopic", msgId, msg);
     }
 }
