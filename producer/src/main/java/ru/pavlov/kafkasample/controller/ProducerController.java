@@ -18,6 +18,8 @@ public class ProducerController {
 
     @PostMapping("/send")
     public void sendOrder(String msgId, String msg){
+        log.info("pre-send to Kafka: msgId = {}, msg = {}", msgId, msg);
         kafkaTemplate.send("ExperimentalTopic", msgId, msg);
+        log.info("post-send to Kafka");
     }
 }
